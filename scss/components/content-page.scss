@@ -1,0 +1,362 @@
+#wrapper{
+    overflow: hidden;
+    .main{
+        overflow: hidden;
+        width: 100%;
+        border-top: 10px solid #2ecc71;
+        .main-content{
+            width: 100%;
+            overflow: hidden;
+            .main-img{
+                @extend %img;
+            }
+            .icons{
+                position: absolute;
+                top : 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                @media only screen and (max-width:$mobile){
+                    position: static;
+                }
+                .icons-content{
+                    margin-top: 154px;
+                    @media only screen and (max-width:$desktop){
+                        margin-top: 40px;
+                    }
+                    @media only screen and (max-width:$mobile){
+                        margin: 0;
+                        padding: 0;      
+                    }
+                    .holder{
+                        padding-left: 94px;
+                        @media only screen and (max-width:$desktop){
+                            padding-left: 40px;
+                        }
+                        @media only screen and (max-width:$mobile){
+                         background: rgba($green, 0.5);
+                         padding: 10px;
+                         text-align: center;   
+                        }
+                        h1{
+                            font-size: 57px;
+                            line-height: 59px;
+                            letter-spacing: -0.8px;
+                            text-transform: capitalize;
+                            color: $white;
+                            margin-bottom: 49px;
+                            font-weight: normal;
+                            font-family: $pacifico;
+                            @media only screen and (max-width:$tablet){
+                                font-size: 50px;
+                                line-height: 20px;
+                            }
+                            @media only screen and (max-width:$mobile){
+                                margin: 0;
+                                line-height: inherit;
+                            }
+                            .dot{
+                                @extend %display;
+                                color: $green;
+                                font-size: 70px;
+                            }
+                        }
+                        h3{
+                            font-family:$sans;
+                            font-size: 24px;
+                            font-weight: 500;
+                            line-height: 33px;
+                            max-width: 460px;
+                            color: $white;
+                            margin-top: 30px;
+                            margin-left: 5px;
+                            letter-spacing: 0.5px;
+                        }
+                        a{
+                            background-color: rgba(10, 10, 10, 0.5);
+                            border-radius: 100%;
+                            padding: 14px 0;
+                            width: 54px;
+                            margin: 12px 5px;
+                            text-align: center;
+                            height: 53px;
+                            &:hover{
+                                background-color: $green;
+                                cursor: pointer;
+                            }
+                        }
+                        .fa{
+                            font-size: 24px;
+                            color: $white;
+                        }
+                    }
+                }
+            }
+        }
+        .three-col{
+            width: 100%;
+            text-align: center;
+            .content{
+                margin: 62px 0;
+                .set{
+                    background-color: $green;
+                    border-radius: 100%;
+                    font-size: 48px;
+                    color: $white;
+                    padding: 24px 29px;
+                }
+                h2{
+                    font-size: 22px;
+                    font-family: $raleway;
+                    line-height: 39px;
+                    font-weight: bold;
+                }
+                p{
+                    font-size: 16px;
+                    font-family: $sans;
+                    font-weight: normal;
+                    line-height: 23px;
+                    padding: 3px 0px;
+                }
+            }
+        }
+        .two-col{
+            width: 100%;
+            background-color: $gray;
+            overflow: hidden;
+            .two{
+                margin-top: 25px;
+                margin-bottom: 50px;
+                @media only screen and (max-width:$tablet){
+                    text-align: center;
+                }
+                h2{
+                    font-size: 22px;
+                    font-family:$raleway;
+                    line-height: 39px;
+                    font-weight: bold;
+                }
+                p{
+                    font-size: 16px;
+                    font-family: $sans;
+                    font-weight: normal;
+                    line-height: 25px;
+                    padding: 3px 0px;
+                    margin: 0 0 20px;
+                }
+                .form{
+                    @extend %display;
+                    margin: 0;
+                    padding: 0;
+                    input{
+                        width: 306px;
+                        height: 58px;
+                        padding-left: 22px;
+                        margin-right: -4px;
+                        border: none;
+                        @extend %display;
+                        font-size: 18px;
+                        border-radius: 11px 0 0 11px;
+                        vertical-align: top;
+                        @media only screen and (max-width:$mobile){
+                            width: 200px;
+                            height: 30px;   
+                        }
+                    }
+                    .button{
+                        width: 142px;
+                        height: 58px;
+                        border-radius: 0 16px 16px 0;
+                        background-color: $green;
+                        font-family: $raleway;
+                        font-weight: bold;
+                        font-size: 22px;
+                        color: $white;
+                        display: inline-block;
+                        vertical-align: top;
+                        border: 0;
+                        @media only screen and (max-width:$mobile){
+                            height: 30px;
+                        }
+                    }
+                }
+            }    
+        }
+        .three{
+            width: 500px;
+            height: 308px;
+            margin: 54px 89px;
+            @media only screen and (max-width:$desktop){
+                width: 450px;
+                margin: 25px auto;
+            }
+            @media only screen and (max-width:$tablet){
+                width: 500px;
+                height: auto;
+                margin: 0 auto;
+                margin-bottom: 20px;
+            }
+            @media only screen and (max-width:$mobile){
+                width: 300px;
+                margin: 0 auto;
+                margin-bottom: 20px;               
+            }
+    
+        }
+        .one-col{
+            width: 100%;
+            background-color: $white;
+            margin-bottom: 30px;
+            .one-detail{
+                margin: 61px auto 0;
+                text-align: center;
+                max-width: 835px;
+                p{
+                    font-family: $sans;
+                    font-size: 18px;
+                    font-style: italic;
+                    font-weight: normal;
+                    line-height: 28px;
+                }
+                h4{
+                    text-align: center;
+                    margin: 0px 0px;
+                    padding: 10px 0px;
+                    margin-right: 18px;
+                }
+            }
+            .profiles{
+                ul{
+                    @extend %un-ordered-list;
+                    margin: 15px auto 0;
+                    position: relative;
+                    max-width: 1037px;
+                    @media only screen and (max-width:$desktop){
+                        text-align: center;
+                        margin: 15px 5px 0;
+                    }
+                    @media only screen and (max-width:$tablet){
+                        margin: 15px 3px 0;
+                    }
+                    &::before{
+                        position: absolute;
+                        top: 0;
+                        bottom: 0;
+                        left: 0;
+                        @extend %clearfix;
+                        width: 30px;
+                        z-index: 2;
+                        box-shadow: inset 22px 0 19px 0px rgba(255, 255, 255, 0.9);
+                        @media only screen and (max-width:$desktop){
+                            left: 14px;
+                        }
+                        @media only screen and (max-width:$tablet){
+                            left: 2px;
+                        }
+                    }
+                    &::after{
+                        position: absolute;
+                        top: 0;
+                        bottom: 0;
+                        right: 0;
+                        @extend %clearfix;
+                        width: 30px;
+                        box-shadow: inset -11px 0 15px 5px rgba(255, 255, 255, 0.9);
+                        @media only screen and (max-width:$desktop){
+                            right: 15px;
+                        }
+                        @media only screen and (max-width:$tablet){
+                            right: 2px;
+                        }
+                    }
+                }
+                li{
+                    @extend %display;
+                    a{
+                        position: relative;
+                        &::after{
+                            position: absolute;
+                            content: ' ';
+                            display: none;
+                            top: 0;
+                            bottom: 0;
+                            right: 0;
+                            left: 0;
+                            clear: both;
+                            background: rgba($green, 0.5);
+                        }
+                        &:hover{
+                            &::after{
+                                display: block;
+                            }
+                        }
+                    }
+                }
+            }
+            h3{
+                text-align: center;
+                padding: 31px 0 0;
+            }
+            .center{
+                text-align: center;
+                font-size: 16px;
+                line-height: 38px;
+                letter-spacing: 0.1px;
+            }
+            .media{
+                text-align: center;
+                padding: 0px 0px;
+                .med{
+                    background-color: rgba(10, 10, 10, 0.5);
+                    border-radius: 100%;
+                    padding: 8px 0;
+                    width: 32px;
+                    margin: 0px 4px;
+                    text-align: center;
+                    height: 33px;
+                    &:hover{
+                        background-color: $green;
+                        cursor: pointer;
+                    }
+                }
+                .fa{
+                    font-size: 17px;
+                    color: $white;
+                }
+            }
+        }
+    }
+    .footer{
+        width: 100%;
+        background-color: $gray;
+        text-align: center;
+        padding: 58px 0px;
+        @media only screen and (max-width:$mobile){
+            padding: 30px;           
+        }
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        li{
+            @extend %display;
+            font-size: 16px;
+            font-family: $sans;
+            font-weight: normal;
+            padding: 0 16px;
+            @media only screen and (max-width:$mobile){
+                display: block;
+                font-size: 18px;
+                padding: 8px 0px;
+                width: 100%;           
+            }
+            a{
+                color: #848484;
+                &:hover{
+                    color: $green;
+                }
+            }
+        }
+    }
+}
